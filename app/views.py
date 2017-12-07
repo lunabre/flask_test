@@ -60,11 +60,10 @@ def comment():
     form = CommentForm()
     
     if form.validate_on_submit():
-        comments.append{
+        comments.append({
                 'author' : form.author.data,
                 'text' : form.text.data
-                
-                }
+                })
 
     return render_template(
             'comments.html',
