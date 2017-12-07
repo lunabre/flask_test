@@ -1,5 +1,5 @@
 from flask import Flask
-form flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 
 ## this init file means that the app folder is a module
 
