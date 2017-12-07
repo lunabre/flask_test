@@ -1,0 +1,20 @@
+{% extends ' base.html' %}
+
+	{% block content %}
+		<h4>deja tu mensaje</h4>
+		<form method = "POST">
+			<p>
+				{{form.author.label}}  <br />
+				{{ form.author }}
+			</p>
+			<p>
+				{{ form.text.label }} <br />
+				{{ form.text }}
+			</p>
+			
+			<p>
+				<input type = "submit" value = "enviar mensaje">
+			</p>
+		</form>
+	
+	{% endblock %}

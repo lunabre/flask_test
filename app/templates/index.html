@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+	{% block content %}
+		{% for salsa in salsas %}
+			{% if salsa.deleted %}
+				<p></p>
+			{% else %}
+			<p>La salsa de {{ salsa.size }} cuesta {{ salsa.price }}</p>
+			{% endif %}
+
+		{% endfor %}
+	{% endblock %}
+
+
